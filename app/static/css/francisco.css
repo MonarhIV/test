@@ -128,3 +128,53 @@
 .menu-img{
   width: 125px;
 }
+
+/* универсальное меню на все страницы */
+.menu-nav {
+  width: 393px;
+  background-color: white;
+
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+
+  position: fixed;
+}
+
+.list-nav {
+  margin: 0;
+  padding: 0 15px;
+  padding-top: 10px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-nav li {
+  display: flex;
+  width: 60px;
+
+  list-style-type: none;
+}
+
+.list-nav__element-link {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.list-nav__element-link svg {
+  margin: 0 auto;
+}
+
+.list-nav__element-text {
+  margin: 0 auto;
+  margin-top: auto;
+
+  font-family: "SFProDisplay-Medium", sans-serif;
+  color: #919193;
+  line-height: 22px;
+  size: 10px;
+  font-size: 12px;
+}
+
