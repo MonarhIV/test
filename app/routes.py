@@ -9,7 +9,7 @@ from models.Names import Names
 app = Blueprint('routes', __name__)
 
 @app.route("/")
-def main():
+async def main():
     return render_template('main.html')
 
 
