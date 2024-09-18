@@ -1,10 +1,12 @@
 from flask import jsonify, current_app
+from flask import Blueprint
 from flask import Flask, render_template, request, jsonify
+from db import Select
 from sqlalchemy import func
 
 from models.Names import Names
 
-app = Flask(__name__)
+app = Blueprint('routes', __name__)
 
 @app.route("/")
 def main():
