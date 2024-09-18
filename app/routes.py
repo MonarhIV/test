@@ -47,13 +47,6 @@ async def trade_in():
     return render_template('trade-in.html')
 
 
-@bp.route("/")
-def index():
-    return  jsonify([
-        {"response": current_app.config['HELLO_MESSAGE']},
-        {"db_path": current_app.config['SQLALCHEMY_DATABASE_URI']}
-    ])
-
 @bp.route("/name")
 def name():
     n = Names.query.order_by(func.random()).first()
