@@ -35,7 +35,7 @@ services:
   nginx:
     build: ./nginx
     ports:
-      - 80:80
+      - 8000:8000
     volumes:
       - ./static:/home/web/default/static
     depends_on:
