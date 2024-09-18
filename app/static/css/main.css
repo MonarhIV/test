@@ -352,7 +352,7 @@ img {
 
   transform: translate(0, 10%);
 
-  width: 100px;
+  width: 81px;
   height: 100px;
 
   background-image: url("../image/logo.svg");
@@ -418,7 +418,9 @@ img {
 
 /* универсальное меню на все страницы */
 .menu-nav {
-    width: 393px;
+    width: 100%;
+    display: flex;
+
     background-color: white;
 
     left: 50%;
@@ -429,7 +431,8 @@ img {
 }
 
 .list-nav {
-    margin: 0;
+    width: 393px;
+    margin: 0 auto;
     padding: 0 15px;
     padding-top: 10px;
 
