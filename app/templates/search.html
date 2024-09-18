@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>search</title>
+    <link rel="stylesheet" href="../static/css/francisco.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../static/js/search.js" defer></script>
+</head>
+<body>
+    <header class="search-header">
+        <h1 class="search-title">Поиск</h1>
+        <div class="avatar-wrapper">
+          <img loading="lazy" src="../static/image/Avatar.png" class="avatar-image" alt="3D Avatar" />
+        </div>
+    </header>
+
+    <div class="navbar">
+      <form action="/search">
+        <button class="nav-button"><img class="menu-img" src="../static/image/devise.png" /></button>
+      </form>
+      <form action="/search">
+        <button class="nav-button"><img class="menu-img" src="../static/image/search_menu.png" /></button>
+      </form>
+      <form action="/cart">
+        <button class="nav-button"><img class="menu-img" src="../static/image/cart_menu.png" /></button>
+      </form>
+      <form action="">
+        <button class="nav-button"><img class="menu-img" src="../static/image/support_menu.png" /></button>
+      </form>
+    </div>
+
+    <form class="search-bar" id="searchForm" role="search" method="post">
+        <button type=submit class="button">
+            <img loading="lazy" src="../static/image/search.png" class="search-icon" alt="" />
+        </button>
+        <input type="search" id="search" class="search-input" placeholder="Поиск" aria-label="Поиск" />
+    </form>
+    <div id="data">
+
+    </div>
+
+</body>
+</html>

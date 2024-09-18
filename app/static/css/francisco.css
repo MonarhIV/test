@@ -1,0 +1,130 @@
+.search-bar { 
+  border-radius: 28px;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: #efefef; 
+  display: flex; margin-top: 30px; 
+  gap: 11px; color: #000; 
+  white-space: nowrap; 
+  text-align: center; 
+  padding: 5px 11px; 
+  font: 400 50px/1 SF Pro Text, sans-serif; 
+}
+.search-icon { 
+  aspect-ratio: 0.87;
+  object-fit: contain; 
+  object-position: center; 
+  width: 50px; 
+  margin: auto 0; 
+}
+.search-input { 
+  flex-grow: 1; 
+  flex-basis: auto; 
+  border: none; 
+  font-size: 50px;
+  background: transparent; 
+  color: inherit; 
+}
+
+.button{
+  height: 60px;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.search-container { 
+  display: flex; 
+  max-width: 353px; 
+  flex-direction: column; 
+}
+
+.search-header { 
+  align-self: start; 
+  display: flex; 
+  gap: calc(100% - 400px); 
+}
+
+.search-title { 
+  color: #000; 
+  text-align: center; 
+  margin: auto 0; 
+  font: 700 80px/1 SF Pro Text, sans-serif; 
+}
+
+.avatar-wrapper { 
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15); 
+  display: flex; 
+  flex-direction: column; 
+}
+
+.avatar-image { 
+  aspect-ratio: 1; 
+  object-fit: contain; 
+  object-position: center; 
+  width: 80px; 
+}
+
+.search-img{
+  width: 100%;
+}
+
+.search-txt{
+  text-align: center; 
+  position: relative;
+  font: 700 70px/1 SF Pro Text, sans-serif;
+  bottom: 580px;
+}
+
+.buy-button{
+  position: relative;
+  margin-left: calc(50% - 75px);
+  bottom: 600px;
+  width: 150px;
+  background-color: white;
+  font-size: 34px;
+  color: #146fe1;
+  border-radius: 60px;
+  border-color: #146fe1;
+}
+.button-text{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.devise{
+  position: relative;
+  height: auto;
+}
+
+.navbar {
+  align-self: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  z-index:1000;
+}
+
+.nav-button {
+  background-color: white; 
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  opacity: 0.6
+}
+
+.menu-img{
+  width: 125px;
+}
