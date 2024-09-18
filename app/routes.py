@@ -10,7 +10,7 @@ app = Blueprint('routes', __name__)
 
 @app.route("/")
 def main():
-    return render_template('foryou.html')
+    return render_template('main.html')
 
 
 @app.route("/search", methods=['POST', 'GET'])
