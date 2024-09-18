@@ -32,9 +32,12 @@ async def search():
         return jsonify(rez)
     return render_template('search.html')
 
+
 @app.route("/products", methods=['POST', 'GET'])
 async def products():
     return render_template('catalog-type-products.html')
+
+
 @app.route("/device", methods=['POST', 'GET'])
 async def devise():
     return render_template('device.html')
