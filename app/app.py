@@ -12,7 +12,7 @@ app.config['JSON_AS_ASCII'] = False # для кириллицы в конфиг�
 conn.init_app(app)
 
 app.register_blueprint(bp)
-app.register_blueprint(routes.app)
+app.register_blueprint(routes.app )
 
 
 if __name__ == "__main__":
