@@ -1,11 +1,10 @@
 from flask import jsonify, current_app
-from flask import Blueprint
 from flask import Flask, render_template, request, jsonify
 from sqlalchemy import func
 
 from models.Names import Names
 
-bp = Blueprint('routes', __name__)
+app = Flask(__name__)
 
 @app.route("/")
 def main():
@@ -45,17 +44,3 @@ async def delivery():
 @app.route("/trade-in", methods=['POST', 'GET'])
 async def trade_in():
     return render_template('trade-in.html')
-
-
-@bp.route("/name")
-def name():
-    n = Names.query.order_by(func.random()).first()
-    return jsonify({"names" : "%s = %d" % (n.name, n.amount) })
-
-# http://azzrael_code.yt/add_random
-@bp.route("/add_random")
-def add_random():
-    n = Names()
-    n.fill_random()
-    n.save()
-    return jsonify({"added" : "%s = %d" % (n.name, n.amount)})
