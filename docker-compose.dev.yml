@@ -37,7 +37,7 @@ services:
     ports:
       - 8000:8000
     volumes:
-      - ./static:/home/web/default/static
+      - ./app/static:/home/web/default/static
     depends_on:
       - app
       - pgadmin
